@@ -1,0 +1,71 @@
+import 'package:flutter/material.dart';
+import 'login_page.dart';
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+          padding: const EdgeInsets.all(16.0), // 전체적으로 16씩 패딩을 주었음.
+          child: Column( // 세로로 위젯을 배치
+            children: <Widget>[
+
+                  RaisedButton(
+                    child: Text(
+                      "이메일아이콘",
+                     style: TextStyle(color: Colors.white),
+                    ),
+                    onPressed: () { // 버튼을 누르면 안에 있는 함수를 실행
+                      Navigator.push( //이메일 로그인창으로 넘어감
+                        context,
+                        MaterialPageRoute(builder: (context) => ),
+                      );
+                    },
+                  ),
+
+                  RaisedButton(
+                      child: Image.asset('.jpg', width: 120, height: 120),
+                    onPressed: () { // 버튼을 누르면 안에 있는 함수를 실행
+                      Navigator.push(//페이스북 로그인창으로 넘어감
+                        context,
+                        MaterialPageRoute(builder: (context) => ()),
+                      );
+                    },
+                  ),
+
+
+
+                  RaisedButton(
+                    child: Image.asset('.jpg', width: 120, height: 120),
+                    onPressed: () { // 버튼을 누르면 안에 있는 함수를 실행
+                      Navigator.push(//트위터 로그인창으로 넘어감
+                        context,
+                        MaterialPageRoute(builder: (context) => ()),
+                      );
+                    },
+                  ),
+
+                  RaisedButton(
+                    child: Image.asset('.jpg', width: 120, height: 120),
+                    onPressed: () { // 버튼을 누르면 안에 있는 함수를 실행
+                      Navigator.push(//구글 로그인창으로 넘어감
+                        context,
+                        MaterialPageRoute(builder: (context) => ()),
+                      );
+                    },
+                  ),
+
+                  RaisedButton(
+                    child: Image.asset('.jpg', width: 120, height: 120),
+                    onPressed: () { // 버튼을 누르면 안에 있는 함수를 실행
+                      Navigator.push(//회원가입창으로 넘어감
+                        context,
+                        MaterialPageRoute(builder: (context) => ()),
+                      );
+                    },
+                  ),
+                   ],
+                    ),
+        );
+  }
+}
+
